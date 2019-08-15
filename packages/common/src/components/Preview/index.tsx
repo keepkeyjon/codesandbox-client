@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { Sandbox, Module } from '../../types';
 import {
   listen,
@@ -591,7 +591,9 @@ class BasePreview extends React.Component<Props, State> {
                       height: '100%',
                       filter: `blur(2px)`,
                       transform: 'scale(1.025, 1.025)',
-                      backgroundImage: `url("${this.props.sandbox.screenshotUrl}")`,
+                      backgroundImage: `url("${
+                        this.props.sandbox.screenshotUrl
+                      }")`,
                       backgroundRepeat: 'no-repeat',
                       backgroundPositionX: 'center',
                     }}
